@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_statusbarcolor_ns/flutter_statusbarcolor_ns.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:login_ui/screens/login_screen.dart';
 
 void main() {
@@ -31,6 +32,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Login Screen',
       theme: ThemeData(
+        fontFamily: GoogleFonts.nunito().fontFamily,
         primarySwatch: Colors.blue,
       ),
       home: const LoginScreen(),
